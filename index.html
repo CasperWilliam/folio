@@ -31,7 +31,7 @@
       </div>
     </div>
 
-    <main class="site-wrapper">
+    <main id="modalMain" class="site-wrapper">
       <header class="site-header">
         <nav class="navbar">
           <div class="brand-logo">
@@ -87,87 +87,45 @@
           </ul>
         </div>
 
-        <div class="portfolio-grid">
-          <div class="portfolio-card" data-item="web" data-open="web-1">
-            <div class="card-body">
-              <img src="./assets/portfolio-1.jpg" alt="portfolio icon" />
-              <div class="card-popup-box">
-              <div>Web Development</div>
-                <h3>Food Website</h3>
-              </div>
-            </div>
-          </div>
+        <div id="cardBody" class="portfolio-grid">
+          
 
-          <div class="portfolio-card" data-item="web" data-open="web-2">
-            <div class="card-body">
-              <img src="./assets/portfolio-2.jpg" alt="portfolio icon" />
-              <div class="card-popup-box">
-                <div>Web Development</div>
-                <h3>Skate Website</h3>
-              </div>
-            </div>
-          </div>
+      </section>
 
-          <div class="portfolio-card" data-item="web" data-open="web-3">
-            <div class="card-body">
-              <img src="./assets/portfolio-3.jpg" alt="portfolio icon" />
-              <div class="card-popup-box">
-                <div>Web Development</div>
-                <h3>Fitness Website</h3>
-              </div>
-            </div>
-          </div>
+      <section class="reviews">
+        <div class="review-title">What People Say</div>
+        <h2 class="header-md">Trusted by Clients</h2>
+        <div class="review-preview">
+          <img src="./assets/cube.png" alt="cube">
+        </div>
 
-          <div class="portfolio-card" data-item="app" data-open="app-1">
-            <div class="card-body">
-              <img src="./assets/portfolio-5.jpg" alt="portfolio icon" />
-              <div class="card-popup-box">
-                <div>App Development</div>
-                <h3>Game App</h3>
-              </div>
+        <div class="review-carousel">
+          <div class="review-item">
+            <div class="review-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum delectus neque deleniti 
+              ipsum asperiores quidem eum atque!
             </div>
-          </div>
-
-          <div class="portfolio-card" data-item="app" data-open="app-2">
-            <div class="card-body">
-              <img src="./assets/portfolio-6.jpg" alt="portfolio icon" />
-              <div class="card-popup-box">
-                <div>App Development</div>
-                <h3>Gambling App</h3>
+            <div class="review-author">
+              <div class="avatar">
+                <img src="./assets/ava-1.jpg" alt="avatar">
               </div>
-            </div>
-          </div>
-
-          <div class="portfolio-card" data-item="app"data-open="app-3">
-            <div class="card-body">
-              <img src="./assets/portfolio-7.jpg" alt="portfolio icon" />
-              <div class="card-popup-box">
-                <div>App Development</div>
-                <h3>Finance App</h3>
-              </div>
-            </div>
-          </div>
-
-          <div class="portfolio-card" data-item="ui" data-open="ui-1">
-            <div class="card-body">
-              <img src="./assets/portfolio-4.jpg" alt="portfolio icon" />
-              <div class="card-popup-box">
-                <div>UI Design</div>
-                <h3>Intricate Design</h3>
-              </div>
-            </div>
-          </div>
-
-          <div class="portfolio-card" data-item="ui" data-open="ui-2">
-            <div class="card-body">
-              <img src="./assets/portfolio-8.jpg" alt="portfolio icon" />
-              <div class="card-popup-box">
-                <div>UI design</div>
-                <h3>Fantasic Design</h3>
+              <div class="details">
+                <div class="name">Casper William</div>
+                <div class="company">AIO Branding</div>
               </div>
             </div>
           </div>
         </div>
+
+        <div class="slide-ctrl-container">
+          <button type="">
+            <i class="fas fa-arrow-left"></i>
+          </button>
+          <button type="">
+            <i class="fas fa-arrow-right"></i>
+          </button>
+        </div>
+
       </section>
 
       <!-- Modals-->
@@ -229,214 +187,7 @@
 
       <!-- Popup Modals-->
 
-      <div id="web-1" class="modal" data-animation="slideInOutTop">
-        <div class="modal-dialog">
-          <header class="modal-header">
-            <h3>Web Project I</h3>
-            <i class="fas fa-times" data-close></i>
-          </header>
-          <div class="modal-body">
-            <div class="img-wrapper">
-              <img src="./assets/portfolio-1.jpg" alt="portfolio image" />
-            </div>
-            <div class="text-wrapper">
-              <p><strong>My first awesome website</strong></p>
-              <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque
-                aperiam atque quibusdam fuga.
-              </p>
-              <p>
-                Perspiciatis vel placeat veniam minima fugiat alias beatae,
-                accusantium, velit magnam suscipit accusamus ipsam earum odit.
-                Ducimus?
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div id="web-2" class="modal" data-animation="slideInOutTop">
-        <div class="modal-dialog">
-          <header class="modal-header">
-            <h3>Web Project II</h3>
-            <i class="fas fa-times" data-close></i>
-          </header>
-          <div class="modal-body">
-            <div class="img-wrapper">
-              <img src="./assets/portfolio-2.jpg" alt="portfolio image" />
-            </div>
-            <div class="text-wrapper">
-              <p><strong>My first awesome website</strong></p>
-              <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque
-                aperiam atque quibusdam fuga.
-              </p>
-              <p>
-                Perspiciatis vel placeat veniam minima fugiat alias beatae,
-                accusantium, velit magnam suscipit accusamus ipsam earum odit.
-                Ducimus?
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div id="web-3" class="modal" data-animation="slideInOutTop">
-        <div class="modal-dialog">
-          <header class="modal-header">
-            <h3>Web Project III</h3>
-            <i class="fas fa-times" data-close></i>
-          </header>
-          <div class="modal-body">
-            <div class="img-wrapper">
-              <img src="./assets/portfolio-3.jpg" alt="portfolio image" />
-            </div>
-            <div class="text-wrapper">
-              <p><strong>My first awesome website</strong></p>
-              <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque
-                aperiam atque quibusdam fuga.
-              </p>
-              <p>
-                Perspiciatis vel placeat veniam minima fugiat alias beatae,
-                accusantium, velit magnam suscipit accusamus ipsam earum odit.
-                Ducimus?
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div id="app-1" class="modal" data-animation="slideInOutTop">
-        <div class="modal-dialog">
-          <header class="modal-header">
-            <h3>App Project I</h3>
-            <i class="fas fa-times" data-close></i>
-          </header>
-          <div class="modal-body">
-            <div class="img-wrapper">
-              <img src="./assets/portfolio-5.jpg" alt="portfolio image" />
-            </div>
-            <div class="text-wrapper">
-              <p><strong>My first awesome website</strong></p>
-              <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque
-                aperiam atque quibusdam fuga.
-              </p>
-              <p>
-                Perspiciatis vel placeat veniam minima fugiat alias beatae,
-                accusantium, velit magnam suscipit accusamus ipsam earum odit.
-                Ducimus?
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div id="app-2" class="modal" data-animation="slideInOutTop">
-        <div class="modal-dialog">
-          <header class="modal-header">
-            <h3>App Project II</h3>
-            <i class="fas fa-times" data-close></i>
-          </header>
-          <div class="modal-body">
-            <div class="img-wrapper">
-              <img src="./assets/portfolio-6.jpg" alt="portfolio image" />
-            </div>
-            <div class="text-wrapper">
-              <p><strong>My first awesome website</strong></p>
-              <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque
-                aperiam atque quibusdam fuga.
-              </p>
-              <p>
-                Perspiciatis vel placeat veniam minima fugiat alias beatae,
-                accusantium, velit magnam suscipit accusamus ipsam earum odit.
-                Ducimus?
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div id="app-3" class="modal" data-animation="slideInOutTop">
-        <div class="modal-dialog">
-          <header class="modal-header">
-            <h3>App Project III</h3>
-            <i class="fas fa-times" data-close></i>
-          </header>
-          <div class="modal-body">
-            <div class="img-wrapper">
-              <img src="./assets/portfolio-7.jpg" alt="portfolio image" />
-            </div>
-            <div class="text-wrapper">
-              <p><strong>My first awesome website</strong></p>
-              <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque
-                aperiam atque quibusdam fuga.
-              </p>
-              <p>
-                Perspiciatis vel placeat veniam minima fugiat alias beatae,
-                accusantium, velit magnam suscipit accusamus ipsam earum odit.
-                Ducimus?
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div id="ui-1" class="modal" data-animation="slideInOutTop">
-        <div class="modal-dialog">
-          <header class="modal-header">
-            <h3>UI Project I</h3>
-            <i class="fas fa-times" data-close></i>
-          </header>
-          <div class="modal-body">
-            <div class="img-wrapper">
-              <img src="./assets/portfolio-4.jpg" alt="portfolio image" />
-            </div>
-            <div class="text-wrapper">
-              <p><strong>My first awesome website</strong></p>
-              <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque
-                aperiam atque quibusdam fuga.
-              </p>
-              <p>
-                Perspiciatis vel placeat veniam minima fugiat alias beatae,
-                accusantium, velit magnam suscipit accusamus ipsam earum odit.
-                Ducimus?
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div id="ui-2" class="modal" data-animation="slideInOutTop">
-        <div class="modal-dialog">
-          <header class="modal-header">
-            <h3>UI Project I</h3>
-            <i class="fas fa-times" data-close></i>
-          </header>
-          <div class="modal-body">
-            <div class="img-wrapper">
-              <img src="./assets/portfolio-8.jpg" alt="portfolio image" />
-            </div>
-            <div class="text-wrapper">
-              <p><strong>My first awesome website</strong></p>
-              <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque
-                aperiam atque quibusdam fuga.
-              </p>
-              <p>
-                Perspiciatis vel placeat veniam minima fugiat alias beatae,
-                accusantium, velit magnam suscipit accusamus ipsam earum odit.
-                Ducimus?
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-
+     
     </main>
 
     <script src="./js/main.js" async defer></script>
