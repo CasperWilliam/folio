@@ -100,9 +100,10 @@
         </div>
 
         <div class="review-carousel">
+
           <div class="review-item">
             <div class="review-text">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum delectus neque deleniti 
+              #1 Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum delectus neque deleniti 
               ipsum asperiores quidem eum atque!
             </div>
             <div class="review-author">
@@ -115,6 +116,55 @@
               </div>
             </div>
           </div>
+
+          <div class="review-item">
+            <div class="review-text">
+              #2 Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum delectus neque deleniti 
+              ipsum asperiores quidem eum atque!
+            </div>
+            <div class="review-author">
+              <div class="avatar">
+                <img src="./assets/ava-1.jpg" alt="avatar">
+              </div>
+              <div class="details">
+                <div class="name">John Doe</div>
+                <div class="company">Esports Strength Coach</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="review-item">
+            <div class="review-text">
+              #3 Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum delectus neque deleniti 
+              ipsum asperiores quidem eum atque!
+            </div>
+            <div class="review-author">
+              <div class="avatar">
+                <img src="./assets/ava-1.jpg" alt="avatar">
+              </div>
+              <div class="details">
+                <div class="name">Jane Doe</div>
+                <div class="company">Gazellia Ventures</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="review-item">
+            <div class="review-text">
+              #4 Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum delectus neque deleniti 
+              ipsum asperiores quidem eum atque!
+            </div>
+            <div class="review-author">
+              <div class="avatar">
+                <img src="./assets/ava-1.jpg" alt="avatar">
+              </div>
+              <div class="details">
+                <div class="name">Hello World</div>
+                <div class="company">Gazellia Ventures</div>
+              </div>
+            </div>
+          </div>
+
         </div>
 
         <div class="slide-ctrl-container">
@@ -144,15 +194,31 @@
             <div class="img-wrapper">
               <img src="./assets/img4.jpg" alt="headshot" />
             </div>
-            <h2>Casper William</h2>
-            <p>text 1</p>
-            <p>text 2</p>
-            <div>
-              <div>Email me:</div>
-              <a href="mailto:casper.williamwebdevelopment@gmail.com"
+           <div class="about-text">
+              <h2>Casper William</h2>
+              <p>Full Stack Developer Based in Orlando, FL</p>
+              <p>It is what it is </p>
+              <div class="contact-me-block">
+               <div>Email me:</div>
+               <a href="mailto:casper.williamwebdevelopment@gmail.com"
                 >casper.williamwebdevelopment@gmail.com</a
-              >
+                >
+              </div>
             </div>
+          </div>
+          <div class="marquee">
+            <ul class="marquee-content">
+              <li><i class="fab fa-github"></i></li>
+              <li><i class="fab fa-codepen"></i></li>
+              <li><i class="fab fa-dev"></i></li>
+              <li><i class="fab fa-react"></i></li>
+              <li><i class="fab fa-vuejs"></i></li>
+              <li><i class="fab fa-angular"></i></li>
+              <li><i class="fab fa-node"></i></li>
+              <li><i class="fab fa-docker"></i></li>
+              <li><i class="fab fa-android"></i></li>
+              <li><i class="fab fa-aws"></i></li>
+            </ul>
           </div>
         </div>
       </div>
@@ -169,18 +235,18 @@
             <i class="fas fa-times" data-close></i>
           </header>
           <div class="modal-body">
-            <div class="img-wrapper">
-              <img src="./assets/img4.jpg" alt="headshot" />
-            </div>
-            <h2>Casper William</h2>
-            <p>text 1</p>
-            <p>text 2</p>
-            <div>
-              <div>Email me:</div>
-              <a href="mailto:casper.williamwebdevelopment@gmail.com"
-                >casper.williamwebdevelopment@gmail.com</a
-              >
-            </div>
+            <div class="contact-text">
+              <h2 class="header-md">Casper William</h2>
+              <div>Have a proect or question? Send me a message.</div>
+              <div>I will reply within 48 hours.</div>
+              </div>
+              <form class="folio-form">
+                <input class="form-control" name="name" type="text" placeholder="Name">
+                <input class="form-control" name="email" type="email" placeholder="Email">
+                <input class="form-control" name="subject" type="text" placeholder="Subject">
+                <textarea class="form-control" name="message" cols="30" placeholder="Write your message..." rows="3"></textarea>
+                  <input type="submit" value="send" class="btn btn-primary round-pill">
+              </form>
           </div>
         </div>
       </div>
@@ -191,5 +257,6 @@
     </main>
 
     <script src="./js/main.js" async defer></script>
+    <script src="./js/carousel.js" async defer></script>
   </body>
 </html>

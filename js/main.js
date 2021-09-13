@@ -27,7 +27,7 @@ const portfolioItems = document.querySelectorAll(portfolioData);
 const searchBox = document.querySelector("#search");
 
 /* portfolio card object*/
-console.log(document.querySelectorAll(portfolioData))
+
 const portfolioCards = [
   {
     dataItem: "web",
@@ -307,19 +307,22 @@ for (const elm of closeModal) {
 //modal
 
 document.addEventListener("click", (e) => {
- if (e.target.className && e.target.getAttribute('class').includes('filter-link')) {
-  setActive(e.target, ".filter-link");
-  const filter = e.target.dataset.filter;
-  document.querySelectorAll(portfolioData).forEach((card) => {
-    if (filter === "all") {
-      card.style.display = "block";
-    } else if (card.dataset.item === filter) {
-      card.style.display = "block";
-    } else {
-      card.style.display = "none";
-    }
-  })
-}
+  if (
+    e.target.className &&
+    e.target.getAttribute("class").includes("filter-link")
+  ) {
+    setActive(e.target, ".filter-link");
+    const filter = e.target.dataset.filter;
+    document.querySelectorAll(portfolioData).forEach((card) => {
+      if (filter === "all") {
+        card.style.display = "block";
+      } else if (card.dataset.item === filter) {
+        card.style.display = "block";
+      } else {
+        card.style.display = "none";
+      }
+    });
+  }
 
   //console.log(e.target, document.querySelector(".modal.is-visible"));
   if (e.target === document.querySelector(".modal.is-visible")) {
@@ -333,4 +336,13 @@ document.addEventListener("keyup", (e) => {
   }
 });
 
-console.log(document.querySelectorAll(portfolioData))
+const elmsDisplayed = getComputedStyle(root).getPropertyValue(
+  "--marquee-elms-displayed"
+);
+const marqueeContent = document.querySelector("ul.marquee-content");
+
+root.style.setProperty("--marquee-elms", marqueeContent.children.length);
+
+for (let i = 0; i < elmsDisplayed; i +=1) {
+  marqueeContent.appendChild(marqueeContent.children[i].cloneNode(true))
+}
